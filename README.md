@@ -1,8 +1,6 @@
-# ReferenceCard
-Reference card of resourceful informations about LaTeX, Markdown and Marp.
-
 # MARKDOWN, MARP & LaTeX (Reference Card)
 ### Última atualização: 13.mai.2022
+Reference card of resourceful informations about LaTeX, Markdown and Marp.
 
 <br><br>
 
