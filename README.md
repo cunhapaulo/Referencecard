@@ -1,12 +1,29 @@
-# MARKDOWN, MARP & LaTeX (Reference Card)
-### Última atualização: 13.mai.2022
-Reference card of resourceful informations about LaTeX, Markdown and Marp.
+### Última atualização: 01.jun.2022
 
-<br><br>
+# MARP
 
-> # MARP
+## Divisor de Slides
+
+```markdown
+<!-- headingDivider: 2 -->
+
+# 1st page
+
+The content of 1st page
+
+## 2nd page
+
+### The content of 2nd page
+
+Hello, world!
+
+# 3rd page
+```
+
+
 
 ## Listas fragmentadas sem marcadores (bullets)
+
 ```markdown
 <div data-marpit-fragment>
 
@@ -45,10 +62,10 @@ Reference card of resourceful informations about LaTeX, Markdown and Marp.
 
 <br><br><br><br><br><br>
 
-> # MARKDOWN
+# MARKDOWN
 <br>
 
-> ## COMENTÁRIOS
+## COMENTÁRIOS
 - Comentários para o código:
   ```markdown
   <!-- 
@@ -61,7 +78,7 @@ Reference card of resourceful informations about LaTeX, Markdown and Marp.
   ```
 
 .
-> ## COLUNAS
+## COLUNAS
 > **Referência**: [Documentação do PANDOC - Columns](https://pandoc.org/MANUAL.html#columns)
 - **SIMPLES**:
   ```markdown
@@ -141,7 +158,7 @@ Reference card of resourceful informations about LaTeX, Markdown and Marp.
   ```
 
 .
-> ## TABELAS
+## TABELAS
 > **Referência**:[Documentação do PANDOC - TABLES](https://pandoc.org/MANUAL.html#tables)
 
 - **TABELA SIMPLES**:
@@ -233,11 +250,11 @@ Table: Sample grid table.
 ```
 
 .
-> ## VARIÁVEIS PARA O BEAMER
+## VARIÁVEIS PARA O BEAMER
 > **Referência**: [Documentação do PANDOC - Variables for Beamer slides](https://pandoc.org/MANUAL.html#variables-for-beamer-slides)
 > 
 .
-> ## MODIFICADORES DE APRESENTAÇÃO  
+## MODIFICADORES DE APRESENTAÇÃO  
 > **Referência**: [Documentação PANDOC - Frame Attributes](https://pandoc.org/MANUAL.html#frame-attributes-in-beamer)
 
 .
@@ -287,7 +304,7 @@ Table: Sample grid table.
   ```
 
 .  
-> ## FUNCIONALIDADES
+## FUNCIONALIDADES
 
 - **LINKS**:
 
@@ -384,13 +401,13 @@ Resultado:
   - [ ] text 3
 
 .
-> ## ARGUMENTOS NO CABEÇALHO YAML
+## ARGUMENTOS NO CABEÇALHO YAML
 
 - `aspectratio=169:` muda a razão de proporção.
 - `header-includes: |` usado para inserir pacotes.
 
 .
-> ## CÓDIGO LATEX NO TEXTO MARKDOWN:
+## CÓDIGO LATEX NO TEXTO MARKDOWN:
 
 1. Inserir no cabeçalho YAML a sessão para incluir no cabeçalho **header-includes**:
 
@@ -421,7 +438,7 @@ Resultado:
    ```
 
 .
-> ## FONTES IMPORTANTES PARA O LATEX
+## FONTES IMPORTANTES PARA O LATEX
 
 - **XeLaTeX command to use fonts**:
   ```latex
@@ -466,7 +483,7 @@ Resultado:
   \setmainfont[Ligatures=TeX]{Linux Libertine O}
   ```
 .
-> ## ESTILOS E THEMAS IMPORTANTES
+## ESTILOS E THEMAS IMPORTANTES
 - **EISVOGEL**
     Template para documentos
     Site: https://github.com/Wandmalfarbe/pandoc-latex-template
@@ -477,7 +494,7 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
     Site: [Hochschule RheinMain Beamer Thema](https://github.com/benjamin-weiss/hsrmbeamertheme)
 
 .
-> ## CONTRIBUIÇÕES INTERESSANTES
+## CONTRIBUIÇÕES INTERESSANTES
 
 - Impressão na forma de _handout_
   ``` latex
