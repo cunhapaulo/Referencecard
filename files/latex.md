@@ -1,4 +1,5 @@
 # Ampliando o LaTeX
+[Back to main](../README.md)
 
 ## Escrever novos comandos:
   ```latex
