@@ -1,16 +1,16 @@
-## Ampliando o LaTeX
+# Ampliando o LaTeX
 
-### Escrever novos comandos
+## Escrever novos comandos:
   ```latex
   \newcommand{\NAME}[NUMBER] { COMMANDS }
 ```
 
-### Definições
+## Definições de constantes:
   ```latex
   \def \askesis {\textit{áskesis}\xspace}
   ```
 
-## Escrever em mais de um idioma (`Multilingual text`)
+## Escrever em mais de um idioma (`Multilingual text`):
 ```latex
 % No cabeçalho:
 \usepackage[english, german, greek, main=brazilian]{babel}
@@ -23,7 +23,7 @@
 \newcommand{\grego}[2] {\foreignlanguage{greek}{#1}, \textit{#2}\xspace }
 \def \aleteia     {\grego{αλέθεια}{alétheia}}
 ```
-## Duas figuras em uma mesma linha
+## Duas figuras em uma mesma linha:
 ```latex
 \begin{figure}[h]
 \begin{subfigure}[b]{0.385\textwidth}
@@ -41,21 +41,21 @@
 \label{fig:1}
 \end{figure}
 ```
-Resultado:
+
+### Resultado:
 
 ![image](https://user-images.githubusercontent.com/28146759/174351910-3f46df1d-f96e-40e5-86cb-cfe672d395c0.png)
 
 
-## Comandos importantes
+## Comandos importantes:
 - `\xspace` acrescenta, de forma inteligente, espaços ao final de um texto definido através de um `\def`.
 - `\def \name {definition}`
 
-## Argumentos no Cabeçalho YAML
-
+## Argumentos no Cabeçalho YAML:
 - `aspectratio=169:` muda a razão de proporção.
 - `header-includes: |` usado para inserir pacotes.
 
-## Diagrama
+## Organização de texto em chaves:
 ```latex
 \begin{figure}[h]
 	$$
@@ -99,14 +99,14 @@ Resultado:
 	\label{fig::filosofia}
 \end{figure}
 ```
-Resultado:
+
+### Resultado:
 
 ![image](https://user-images.githubusercontent.com/28146759/174417375-264886ac-718d-4818-bcc8-1b10f6d61117.png)
 
 
 
-## CÓDIGO LATEX NO TEXTO MARKDOWN:
-
+## Incluir código LaTeX em texto Markdown:
 1. Inserir no cabeçalho YAML a sessão para incluir no cabeçalho **header-includes**:
 
     ``` latex
@@ -136,9 +136,9 @@ Resultado:
    ```
 
 .
-## FONTES IMPORTANTES PARA O LATEX
+## Fontes importantes para o LaTeX:
 
-- **XeLaTeX command to use fonts**:
+### **XeLaTeX command to use fonts**:
   ```latex
   \setmainfont[Ligatures=TeX]{Linux Libertine O}
   ```
@@ -148,53 +148,54 @@ Resultado:
   - `C:\Users\paulo.cunha.TJ.PA.GOV.BR\AppData\Roaming\MiKTeX\fonts\opentype`
   - `C:\Users\paulo.cunha.TJ.PA.GOV.BR\OneDrive\_LaTeX\_TYPEFACES\`
 .
-- **Antiqua**
+### **Antiqua**
 .
-- **Palatino**
-.
-- **Charter**
+### **Palatino**.
+### **Charter**
   ``` latex
   \usefonttheme{serif} % change font to allow \textbf{}
   \usepackage{charter} % Nicer fonts
   ```
 .
-- **Fira** 
+### **Fira** 
   > Uso: (`Metropolis`)
   > - Fonte utilizada no estilo [METROPOLIS](https://github.com/matze/mtheme). Está disponível na forma de um um _package_ do LaTeX, sob o nome `Fira` em `\Fonts\Outline fonts`no MiKTeX.
 
 .
-- **Flama** 
+### **Flama** 
   > Uso: (`HSRM`) 
   > - Fonte utilizada pelo estilo [HSRM`(Hochschule RheinMain)` ](https://github.com/benjamin-weiss/hsrmbeamertheme) para slides `Beamer`, criado por _Benjamin Weiss_.
   > - Download: [Font Geek](https://fontsgeek.com/flama-font?ref=readme).
 
 .
-- **Biolinum** e **Libertine** 
+### **Biolinum** e **Libertine** 
   > Uso: (`ACM`)
   > - Fonte utilizada nos modelos de artigos da `ACM`.
   > - Download: [Font Squirrel - Biolinum](https://www.fontsquirrel.com/fonts/linux-biolinum)  e [DaFont - Libertine](https://www.dafont.com/pt/linux-libertine.font?text=Haskell+is+a+Functional+Programming+Language)
   > - [Site da ACM](https://www.acm.org/publications/taps/accepted-latex-packages)
 
 .
-- **Linux Libertine O**
+### **Linux Libertine O**
   ``` latex
   \setmainfont[Ligatures=TeX]{Linux Libertine O}
   ```
 .
-## ESTILOS E THEMAS IMPORTANTES
-- **EISVOGEL**
+## Estilos e Temas Importantes:
+### **Eisvogel
     Template para documentos
     Site: https://github.com/Wandmalfarbe/pandoc-latex-template
-- **Metropolis** 
+
+### **Metropolis** 
     Site: [https://github.com/matze/mtheme](https://github.com/matze/mtheme)
-- **HSRM** 
+
+### **HSRM** 
 Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/personen/hofmann-karl-heinrich/service-latex/beamer-latex)
     Site: [Hochschule RheinMain Beamer Thema](https://github.com/benjamin-weiss/hsrmbeamertheme)
 
 .
-## CONTRIBUIÇÕES INTERESSANTES
+## Contribuições Interessantes:
 
-- Impressão na forma de _handout_
+### Impressão na forma de _handout_
   ``` latex
     $if(handout)$
     \usepackage{pgfpages}
@@ -202,19 +203,21 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
     \pgfpagesuselayout{4 on 1}[a4paper,border shrink=4mm,landscape]
     $endif$
   ```
-- Estilos de Fontes para o LaTeX
-  > \usepackage[tt=false]{**antiqua**}
-  > \usepackage[tt=false]{**palatino}**
-  > \usepackage[tt=false]{**libertine**}
 
-- Penn State University
+### Estilos de Fontes para o LaTeX
+``` latex
+   \usepackage[tt=false]{antiqua}
+   \usepackage[tt=false]{palatino}
+   \usepackage[tt=false]{libertine}
+```
 
-    ```latex
+### Penn State University
+```latex
     \definecolor{mpigreen}{HTML}{007977}
     \setbeamercolor{frametitle}{bg=mpigreen}
-    ```
+```
 
-- Código **LaTeX** para diferenciar números menores que 10:
+### (importente) Código **LaTeX** para diferenciar números menores que 10:
   ``` latex  
   \def\artnum#1{\ifnum#1<10 #1º\else #1\fi}
 
@@ -225,7 +228,7 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
   \newcommand{\artiii}[4][]{(art.~\bold{\artnum{#2}},~\bold{#3}~``\bold{#4}''#1)}
   ```
 
-- Numeração diferente nos Anexos (Appendix) em LaTeX
+### Numeração diferente nos Anexos (Appendix) em LaTeX
   ```latex
   <!-- 
   ******************************** A P E N D I C E S ******************************** 
@@ -268,25 +271,25 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
   ```
 
 
-- Resolving the problem with {.standout} slides corrupting the following ones **(Metropolis)**:
+### **(Metropolis - Pandoc)** Resolving the problem with {.standout} slides corrupting the following ones:
   ```markdown
   header-includes: 
-      - \usepackage[portuges]{babel}
-      # - \usepackage[tt=false]{antiqua}
-      # - \usepackage[tt=false]{palatino}
-      # - \usepackage[tt=false]{libertine}
-      # - \usepackage{multicol}
-      # - \usepackage{tabularx}
-      # - \usepackage{array}
-      # - \usepackage{longtable}
-      - '\usetheme{metropolis}'
-      - '\makeatletter'
-      - '\beamer@ignorenonframefalse'
-      - '\makeatother'
+    \usepackage[portuges]{babel}
+	\usepackage[tt=false]{antiqua}
+	\usepackage[tt=false]{palatino}
+	\usepackage[tt=false]{libertine}
+    \usepackage{multicol}
+    \usepackage{tabularx}
+    \usepackage{array}
+    \usepackage{longtable}
+    \usetheme{metropolis}
+    \makeatletter
+    \beamer@ignorenonframefalse
+    \makeatother
   
   ```
 
--  Usar fontes do modelo **ACM**
+### Usar fontes do modelo **ACM**
    ```latex
       \usepackage{tikz,pgfplots}
       \usepackage[T1]{fontenc} 
@@ -296,9 +299,9 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
       \usepackage[libertine]{newtxmath}
     ```
   
-  - Modificações feitas por Paulo Cunha:
-  
-    ``` latex
+### Modificações feitas por Paulo Cunha:
+```latex
+
     %---- begin(paulo.cunha)------------------------------------------------
 
     %---------------------------------------------------------------------
@@ -338,4 +341,4 @@ Site da universidade: [https://www.hs-rm.de](https://www.hs-rm.de/de/hochschule/
 
     %---- end(paulo.cunha)------------------------------------------------
 
-    ```
+```

@@ -1,7 +1,10 @@
-# Welcome to my _Reference Card_ page.
+# Home
+Paulo Cunha edited this page on 5 Jul
+ 
+ Welcome to my _Reference Card_ page.
 
 I hope these observations are useful to as many people as possible!!
-Suggestions are most welcome!
+Suggestions are mostly welcome!
 
 ##  Topics:
 
