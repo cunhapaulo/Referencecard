@@ -150,7 +150,6 @@
   - `C:\Users\paulo.cunha.TJ.PA.GOV.BR\OneDrive\_LaTeX\_TYPEFACES\`
 .
 ### **Antiqua**
-.
 ### **Palatino**.
 ### **Charter**
   ``` latex
