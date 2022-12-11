@@ -1,10 +1,25 @@
 ## Ampliando o LaTeX
 
-### Escrever novos comandos
-  ```latex
-  \newcommand{\NAME}[NUMBER] { COMMANDS }
-  ```
-### Símbolo de desvio (Donald Knuth) 
+### Acessar o arquivo BibTeX do Mendeley:
+
+```latex
+\bibliography{C:/Users/paulo.cunha/OneDrive/__MARKDOWN/bibtex/library.bib}{}
+```
+
+### Lista ordenada inline:
+```latex
+\begin{enumerate*}[label=(\roman*)]
+    \item as \textit{representações coletivas}
+    \item \textit{ritos} e \textit{práticas cerimoniais} 
+    \item a característica εκκλεσια (ekklesia){coletividade}.
+\end{enumerate*}
+```
+
+### Escrever novos comandos:
+```latex
+\newcommand{\NAME}[NUMBER] { COMMANDS }
+```
+### Símbolo de desvio (Donald Knuth):
 - \dband
 - \textdbend
 
@@ -22,11 +37,11 @@
   ```
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Knuth%27s_dangerous_bend_symbol.svg/90px-Knuth%27s_dangerous_bend_symbol.svg.png?20120422203721)
 
-### Definições
+### Definições:
   ```latex
   \def \askesis {\textit{áskesis}\xspace}
   ```
-### Definições de cores
+### Definições de cores:
   ```latex
     % Colors
     \colorlet{darkgreen}{green!50!black}
@@ -37,9 +52,16 @@
 
 ## Escrever em mais de um idioma (`Multilingual text`)
 ```latex
-% No cabeçalho:
+%--------------------------------------------------
+% IMPORTANTE: Para usar caracteres estrangeiros 
+%             use o PDFLATEX e não o XELATEX
+%--------------------------------------------------
 \usepackage[english, german, greek, main=brazilian]{babel}
+\babelprovide[import]{greek}	   % To write in foreing languages (like greek)
+\usepackage[LGR, T1]{fontenc}
+\usepackage{alphabeta}
 \babelprovide[import]{greek}
+%--------------------------------------------------
 
 % Uso no corpo do texto:
 \foreignlanguage{greek}{αλέθεια}
