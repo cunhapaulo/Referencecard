@@ -20,8 +20,11 @@
 \newcommand{\NAME}[NUMBER] { COMMANDS }
 ```
 ### Símbolo de desvio (Donald Knuth):
-- \dband
-- \textdbend
+
+|     Command     |     Symbol       |
+|:--------------- | :--------------: |
+|   - `\dband`, <br> - `\textdbend` | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Knuth%27s_dangerous_bend_symbol.svg/90px-Knuth%27s_dangerous_bend_symbol.svg.png?20120422203721)|
+
 
   ```latex
   \usepackage{manfnt}
@@ -35,7 +38,6 @@
     \par % ... and this too.
    }
   ```
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Knuth%27s_dangerous_bend_symbol.svg/90px-Knuth%27s_dangerous_bend_symbol.svg.png?20120422203721)
 
 ### Definições:
   ```latex
