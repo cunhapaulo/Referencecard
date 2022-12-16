@@ -1,4 +1,11 @@
-## Ampliando o LaTeX
+## Comandos usuais:
+
+### Todos os caracteres em maiúsculo:
+```latex
+\MakeUppercase
+```
+
+## Ampliando o LaTeX:
 
 ### Acessar o arquivo BibTeX do Mendeley:
 
