@@ -1,7 +1,15 @@
 # References
 Paulo Cunha edited this page on 5 Jul
 
-### Welcome to my _Reference Card_ page.
+## Welcome to my _Reference Card_ page.
+
+Due to praticality, I decided to use the Wiki instead of Readme as repositoy to my fantastic notes about my *liblings* subjects. All you have to do is click above the apropriate icon, just like in the picture below:
+
+![image](https://user-images.githubusercontent.com/28146759/227606136-8c931d7d-8ddd-4dc5-b8ac-5872828ce2de.png)
+
+Anyway, if you wich to use Readme file instead, it is outdated but still functional below:
+
+### OLD TEXT:
 I hope these observations are useful to as many people as possible!!
 Suggestions are mostly welcome!
 
