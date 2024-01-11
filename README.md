@@ -18,9 +18,10 @@ Suggestions are mostly welcome!
 | Tópico                                                                                    | Descrição                            |
 | ----------------------------------------------------------------------------------------- | ------------------------------------ |
 | [Bibliotecas](./files/libs.md)                                                            | Libraries with interesting code      |
+| [Python](https://github.com/cunhapaulo/ReferenceCard/wiki/Python)                         | Python Tips                          |
 | [Greek](https://github.com/cunhapaulo/ReferenceCard/wiki/Greek)                           | Code to use greek characters         |
 | [Marp](https://github.com/cunhapaulo/ReferenceCard/wiki/Marp)                             | Records abou using MARP              |
-| [CSS](https://github.com/cunhapaulo/ReferenceCard/blob/main/slides.css)                               | One CSS file to be learned of        |
+| [CSS](https://github.com/cunhapaulo/ReferenceCard/blob/main/slides.css)                   | One CSS file to be learned of        |
 | [LaTeX](./files/latex.md)                                                                 | Code to be reused in LaTeX           |
 | [Markdown](https://github.com/cunhapaulo/ReferenceCard/wiki/Markdown-to-LaTeX-via-Pandoc) | Markdown code to be used with Pandoc |
 
