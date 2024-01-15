@@ -11,7 +11,7 @@ There are four collection data types in the Python programming language:
 |        **`Set`** | `{"apple", "banana", "cherry"}` |   no   |   no    |     no     |     no     |
 
 
-### 1.1. **Listas** 
+## 2. **Listas** 
    Em Python, as listas são representadas por colchetes (`[]`). Elas são estruturas de dados **mutáveis**, o que significa que você pode modificar, adicionar ou remover elementos. As listas podem conter uma variedade de tipos de dados, incluindo números, strings e até mesmo outras listas.
 
    Exemplo:
@@ -55,7 +55,7 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 Estas são apenas algumas das funções e métodos disponíveis para listas em Python. A linguagem é rica em recursos, permitindo uma manipulação versátil de estruturas de dados. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, fique à vontade para perguntar!
 
-### 1.2. **Dicionários:** `{'nome': 'John', 'idade': 30, 'cidade': 'Example'}`
+## 3. **Dicionários:** `{'nome': 'John', 'idade': 30, 'cidade': 'Example'}`
    Dicionários em Python são representados por chaves (`{}`). Eles são estruturas de dados que armazenam pares chave-valor, permitindo que você associe um valor a uma chave específica. Dicionários são úteis para mapear informações de forma eficiente.
 
    Exemplo:
@@ -91,7 +91,7 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 Estas são apenas algumas das funções e métodos disponíveis para dicionários em Python. A linguagem oferece uma ampla gama de funcionalidades para manipulação eficiente de dicionários. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, sinta-se à vontade para perguntar!
 
-###  1.3. **Tuplas:** `(1, 'dois', 3.0)`
+##  4. **Tuplas:** `(1, 'dois', 3.0)`
    As tuplas são representadas por parênteses (`()`). Ao contrário das listas, **as tuplas são imutáveis**, ou seja, após criadas, seus elementos não podem ser alterados. Elas são geralmente utilizadas para armazenar coleções de dados relacionados.
 
    Exemplo:
@@ -133,7 +133,7 @@ Tuplas em Python **são imutáveis**, então as operações que modificam a estr
 Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, fique à vontade para perguntar!
 
 
-### 1.4. Percorrer itens de uma lista []:
+### 4.1. Percorrer itens de uma lista []:
 
 ```python
 import pprint
@@ -182,13 +182,13 @@ def disciplinesList(enrollment):
 
 
 
-### 1.5. List 
+### 4.2. List 
 
 ![image](https://github.com/cunhapaulo/ReferenceCard/assets/28146759/15fbe08c-7a1a-4dec-9724-890590b5b898)
 
 - Python will give you an `IndexError` error message if you use an index that exceeds the number of values in your list value.
 
-#### 1.5.1. Getting a List from Another List with Slices:
+#### 4.2.1. Getting a List from Another List with Slices:
 
 ![image](https://github.com/cunhapaulo/ReferenceCard/assets/28146759/68ae06e8-76a5-4f98-9b51-3243341315bb)
 
@@ -206,7 +206,7 @@ def disciplinesList(enrollment):
     ['cat', 'bat']
 ```
 
-#### 1.5.2. Program
+#### 4.2.2. Program
 
 ```python
 catNames = []
@@ -224,7 +224,7 @@ for name in catNames:
     print(' ' + name)
 ```
 
-#### 1.5.3. The `in` and `not in` Operators:
+#### 4.2.3. The `in` and `not in` Operators:
 
 ```python
     myPets = ['Zophie', 'Pooka', 'Fat-tail']
@@ -236,14 +236,14 @@ for name in catNames:
         print(name + ' is my pet.')
 ```
 
-#### 1.5.4. The Multiple Assignment Trick
+#### 4.2.4. The Multiple Assignment Trick
 
 ```python
     >>> cat = ['fat', 'gray', 'loud']
     >>> size, color, disposition = cat
 ```
 
-#### 1.5.5. Using the `enumerate()` Function with Lists:
+#### 4.2.5. Using the `enumerate()` Function with Lists:
 
 ```
 >>> supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
@@ -260,7 +260,7 @@ the integer index of the items in the list, you can call the enumerate() functio
 instead. On each iteration of the loop, enumerate() will return two
 values: the index of the item in the list, and the item in the list itself.
 
-#### 1.5.6. Using the `random.choice()` and `random.shuffle()` Functions with Lists:
+#### 4.2.6. Using the `random.choice()` and `random.shuffle()` Functions with Lists:
 
 ```python
 >>> import random
@@ -284,7 +284,7 @@ values: the index of the item in the list, and the item in the list itself.
 ['Alice', 'David', 'Bob', 'Carol']
 ```
 
-#### 1.5.7. Finding a Value in a List with the `index()` Method:
+#### 4.2.7. Finding a Value in a List with the `index()` Method:
 
 ```
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
@@ -301,7 +301,7 @@ ValueError: 'howdy howdy howdy' is not in list
 **Important**: When there are duplicates of the value in the list, the index of its first
 appearance is returned.
 
-#### 1.5.8. Adding Values to Lists with the `append()` and `insert()` Methods:
+#### 4.2.8. Adding Values to Lists with the `append()` and `insert()` Methods:
 
 ```
 >>> spam = ['cat', 'dog', 'bat']
@@ -317,7 +317,7 @@ appearance is returned.
 ['cat', 'chicken', 'dog', 'bat']
 ```
 
-#### 1.5.9. Removing Values from Lists with the `remove()` Method:
+#### 4.2.9. Removing Values from Lists with the `remove()` Method:
 
 ```
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -385,7 +385,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 ```
 
 
-#### 1.5.10. Reversing the Values in a List with the `reverse()` Method:
+#### 4.2.10. Reversing the Values in a List with the `reverse()` Method:
 
 ```
 >>> spam = ['cat', 'dog', 'moose']
@@ -441,7 +441,7 @@ False
 ```
 
 
-###  1.6. `Dictionary`
+###  4.3. `Dictionary`
 
 ```python
 import pprint
@@ -487,7 +487,7 @@ Number of things being brought:
 - Apple Pies 1
 ```
 
-### 1.7. `Tuple `
+### 4.4. `Tuple `
 
 The tuple data type is almost identical to the list data type, except in two ways.
 First, tuples are typed with parentheses, ( and ), instead of square brackets,
@@ -516,7 +516,7 @@ eggs[1] = 99
 TypeError: 'tuple' object does not support item assignment
 ```
 
-### 1.8. Converting Types with the list() and tuple() Functions:
+### 4.5. Converting Types with the list() and tuple() Functions:
 
 Just like how `str(42)` will return '42', the string representation of the integer
 `42`, the functions `list()` and `tuple()` will return list and tuple versions of the
@@ -537,23 +537,23 @@ values passed to them:
 Converting a tuple to a list is handy if you need a mutable version of a
 tuple value.
 
-## 2. Working with PDF and Word Documents
+## 5. Working with PDF and Word Documents
 
-## 3. Working with CSV Files and JSON Data
+## 6. Working with CSV Files and JSON Data
 
-## 4. Pattern Matching with Regular Expressions
+## 7. Pattern Matching with Regular Expressions
 
-## 5. Reading and Writing Files
+## 8. Reading and Writing Files
 
-## 6. Organizing Files
+## 9. Organizing Files
 
-## 7. Web Scraping
+## 10. Web Scraping
 
-## 8. Working with Excel Spreadsheets
+## 11. Working with Excel Spreadsheets
 
-## 9. Generalities
+## 12. Generalities
 
-### 9.1. Strings:
+### 12.1. Strings:
 
 ```python
     myName = input()
@@ -563,7 +563,7 @@ tuple value.
     # str(54), int('54'), float('54.0')
 ```
 
-### 9.2. Operators:
+### 12.2. Operators:
 
 |  Op   |     Description     |
 | :---: | :------------------ |
@@ -579,9 +579,9 @@ tuple value.
 |  and  | and                 |
 |  or   | or                  |
 
-### 9.3. Flow control statements
+### 12.3. Flow control statements
 
-#### 9.3.1. `if` statement:
+#### 12.3.1. `if` statement:
 
 ```python
 # If statement
@@ -609,7 +609,7 @@ else:
     print('You are neither Alice nor a little kid.')
 ```
 
-#### 9.3.2. `while` statement:
+#### 12.3.2. `while` statement:
 
 ```python
 # While loop statement
@@ -638,7 +638,7 @@ if numOfGuests:
 print('Done')
 ```
 
-#### 9.3.3. `for` statement:
+#### 12.3.3. `for` statement:
 
 **Observation**: `break` and `continue` allowed.
 
@@ -655,7 +655,7 @@ for i in range(5, -1, -1):
     print(i)
 ```
 
-### 9.4. Importing Modules:
+### 12.4. Importing Modules:
 
 ```python
 import random, sys, os, math
@@ -664,7 +664,7 @@ for i in range(5):
     print(random.randint(1, 10))
 ```
 
-### 9.5. Ending a Program Early with the `sys.exit()` Function:
+### 12.5. Ending a Program Early with the `sys.exit()` Function:
 
 ```python
 import sys
@@ -677,7 +677,7 @@ while True:
     print('You typed ' + response + '.')
 ```
 
-### 9.6. A small program
+### 12.6. A small program
 
 ```python
 
@@ -706,7 +706,7 @@ else:
     print('Nope. The number I was thinking of was ' + str(secretNumber))
 ```
 
-### 9.7. Exception handling:
+### 12.7. Exception handling:
 
 ```python
 import time, sys
