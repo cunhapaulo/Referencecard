@@ -1,13 +1,18 @@
-## The Programming Language
-
-## IMPORTANTE
-
-- List: `["a", "b", "c"]`
-- Tuple:
+## 1. Data Types
 
 
-## **Listas:**
-   Em Python, as listas são representadas por colchetes (`[]`). Elas são estruturas de dados mutáveis, o que significa que você pode modificar, adicionar ou remover elementos. As listas podem conter uma variedade de tipos de dados, incluindo números, strings e até mesmo outras listas.
+There are four collection data types in the Python programming language:
+
+|       Nome       |             Exemplo             | Odered | Indexed | Changeable | Duplicates |
+| :--------------: | :------------------------------ | :----: | :-----: | :--------: | :--------: |
+|       **`List`** | `["a", "b", "c"]`               |  yes   |   yes   |    yes     |    yes     |
+| **`Dictionary`** | `{'nome': 'John', 'idade': 30}` |  yes   |   yes   |    yes     |     no     |
+|      **`Tuple`** | `(1, 'dois', 3.0)`              |  yes   |   yes   |     no     |    yes     |
+|        **`Set`** | `{"apple", "banana", "cherry"}` |   no   |   no    |     no     |     no     |
+
+
+### 1.1. **Listas** 
+   Em Python, as listas são representadas por colchetes (`[]`). Elas são estruturas de dados **mutáveis**, o que significa que você pode modificar, adicionar ou remover elementos. As listas podem conter uma variedade de tipos de dados, incluindo números, strings e até mesmo outras listas.
 
    Exemplo:
    ```python
@@ -37,6 +42,7 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 4. **Métodos de ordenação:**
    - `lista.sort()`: Ordena os elementos da lista in-place.
+   - `lista.sort(key=str.lower)`: Ordena minúsculas primeiro.
    - `sorted(lista)`: Retorna uma nova lista ordenada, sem modificar a original.
 
 5. **Métodos de cópia:**
@@ -49,7 +55,7 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 Estas são apenas algumas das funções e métodos disponíveis para listas em Python. A linguagem é rica em recursos, permitindo uma manipulação versátil de estruturas de dados. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, fique à vontade para perguntar!
 
-## **Dicionários:**
+### 1.2. **Dicionários:** `{'nome': 'John', 'idade': 30, 'cidade': 'Example'}`
    Dicionários em Python são representados por chaves (`{}`). Eles são estruturas de dados que armazenam pares chave-valor, permitindo que você associe um valor a uma chave específica. Dicionários são úteis para mapear informações de forma eficiente.
 
    Exemplo:
@@ -85,8 +91,8 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 Estas são apenas algumas das funções e métodos disponíveis para dicionários em Python. A linguagem oferece uma ampla gama de funcionalidades para manipulação eficiente de dicionários. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, sinta-se à vontade para perguntar!
 
-##  **Tuplas:**
-   As tuplas são representadas por parênteses (`()`). Ao contrário das listas, as tuplas são imutáveis, ou seja, após criadas, seus elementos não podem ser alterados. Elas são geralmente utilizadas para armazenar coleções de dados relacionados.
+###  1.3. **Tuplas:** `(1, 'dois', 3.0)`
+   As tuplas são representadas por parênteses (`()`). Ao contrário das listas, **as tuplas são imutáveis**, ou seja, após criadas, seus elementos não podem ser alterados. Elas são geralmente utilizadas para armazenar coleções de dados relacionados.
 
    Exemplo:
    ```python
@@ -127,7 +133,7 @@ Tuplas em Python **são imutáveis**, então as operações que modificam a estr
 Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, fique à vontade para perguntar!
 
 
-## Percorrer itens de uma lista []:
+### 1.4. Percorrer itens de uma lista []:
 
 ```python
 import pprint
@@ -175,197 +181,14 @@ def disciplinesList(enrollment):
 ```
 
 
-### Strings:
 
-```python
-    myName = input()
-    nameLength = len(myName) # length of a string
-    print("Seu nome é " + myName + " que tem " + str(nameLength) + " caracteres."
-
-    # str(54), int('54'), float('54.0')
-```
-
-### Operators:
-
-|  Op   | Description         |
-| :---: | :------------------ |
-|  ==   | equal to            |
-|  !=   | not equal to        |
-|   <   | lower than          |
-|   >   | greater than        |
-|  <=   | lower or equal to   |
-|  >=   | greater or equal to |
-| True  | true                |
-| False | false               |
-|  not  | not                 |
-|  and  | and                 |
-|  or   | or                  |
-
-### Flow control statements
-
-#### `if` statement:
-
-```python
-# If statement
-if name == 'Alice':
-    print('Hi, Alice.')
-
-
-# If Else statement:
-if name == 'Alice':
-    print('Hi, Alice.')
-else:
-    print('Hello, stranger.')
-
-
-# Elif statement:
-if name == 'Alice':
-    print('Hi, Alice.')
-elif age < 12:
-    print('You are not Alice, kiddo.')
-elif age > 100:
-    print('You are not Alice, grannie.')
-elif age > 2000:
-    print('Unlike you, Alice is not an undead, immortal vampire.')
-else:
-    print('You are neither Alice nor a little kid.')
-```
-
-#### `while` statement:
-
-```python
-# While loop statement
-while True:
-    print("Please, type you name.")
-    name = input()
-    if name != "Billy":
-        continue
-    print(Welcome back, Billy. Type your password")
-    password = input()
-    if password == "swordfish":
-        break
-print("Access granted.")
-
-```
-
-```python
-name = ''
-while not name:
-    print('Enter your name:')
-    name = input()
-print('How many guests will you have?')
-numOfGuests = int(input())
-if numOfGuests:
-    print('Be sure to have enough room for all your guests.')
-print('Done')
-```
-
-#### `for` statement:
-
-**Observation**: `break` and `continue` allowed.
-
-```python
-
-print('My name is')
-for i in range(5):
-    print('Jimmy Five Times (' + str(i) + ')')
-
-for i in range(0, 10, 2):  # 0 - start; 10 - end; 2 - step
-    print(i)
-
-for i in range(5, -1, -1):
-    print(i)
-```
-
-### Importing Modules:
-
-```python
-import random, sys, os, math
-
-for i in range(5):
-    print(random.randint(1, 10))
-```
-
-### Ending a Program Early with the `sys.exit()` Function:
-
-```python
-import sys
-
-while True:
-    print('Type exit to exit.')
-    response = input()
-    if response == 'exit':
-        sys.exit()
-    print('You typed ' + response + '.')
-```
-
-### A small program
-
-```python
-
-# This is a guess the number game.
-
-import random
-
-secretNumber = random.randint(1, 20)
-print('I am thinking of a number between 1 and 20.')
-
-# Ask the player to guess 6 times.
-for guessesTaken in range(1, 7):
-    print('Take a guess.')
-    guess = int(input())
-
-    if guess < secretNumber:
-        print('Your guess is too low.')
-    elif guess > secretNumber:
-        print('Your guess is too high.')
-    else:
-        break # This condition is the correct guess!
-
-if guess == secretNumber:
-    print('Good job! You guessed my number in ' + str(guessesTaken) + 'guesses!')
-else:
-    print('Nope. The number I was thinking of was ' + str(secretNumber))
-```
-
-### Exception handling:
-
-```python
-import time, sys
-
-indent = 0 # How many spaces to indent.
-indentIncreasing = True # Whether the indentation is increasing or not.
-
-try:
-    while True: # The main program loop.
-        print(' ' * indent, end='')
-        print('********')
-        time.sleep(0.1) # Pause for 1/10 of a second.
-
-        if indentIncreasing:
-            # Increase the number of spaces:
-            indent = indent + 1
-            if indent == 10:
-                # Change direction:
-                indentIncreasing = False
-        else:
-            # Decrease the number of spaces:
-            indent = indent - 1
-            if indent == 0:
-                # Change direction:
-                indentIncreasing = True
-
-except KeyboardInterrupt:
-    sys.exit()
-```
-
-## List Data Type
+### 1.5. List 
 
 ![image](https://github.com/cunhapaulo/ReferenceCard/assets/28146759/15fbe08c-7a1a-4dec-9724-890590b5b898)
 
 - Python will give you an `IndexError` error message if you use an index that exceeds the number of values in your list value.
 
-### Getting a List from Another List with Slices:
+#### 1.5.1. Getting a List from Another List with Slices:
 
 ![image](https://github.com/cunhapaulo/ReferenceCard/assets/28146759/68ae06e8-76a5-4f98-9b51-3243341315bb)
 
@@ -383,7 +206,7 @@ except KeyboardInterrupt:
     ['cat', 'bat']
 ```
 
-- Program
+#### 1.5.2. Program
 
 ```python
 catNames = []
@@ -401,7 +224,7 @@ for name in catNames:
     print(' ' + name)
 ```
 
-- The `in` and `not in` Operators:
+#### 1.5.3. The `in` and `not in` Operators:
 
 ```python
     myPets = ['Zophie', 'Pooka', 'Fat-tail']
@@ -413,14 +236,14 @@ for name in catNames:
         print(name + ' is my pet.')
 ```
 
-- The Multiple Assignment Trick
+#### 1.5.4. The Multiple Assignment Trick
 
 ```python
     >>> cat = ['fat', 'gray', 'loud']
     >>> size, color, disposition = cat
 ```
 
-- Using the `enumerate()` Function with Lists:
+#### 1.5.5. Using the `enumerate()` Function with Lists:
 
 ```
 >>> supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
@@ -437,7 +260,7 @@ the integer index of the items in the list, you can call the enumerate() functio
 instead. On each iteration of the loop, enumerate() will return two
 values: the index of the item in the list, and the item in the list itself.
 
-- Using the `random.choice()` and `random.shuffle()` Functions with Lists:
+#### 1.5.6. Using the `random.choice()` and `random.shuffle()` Functions with Lists:
 
 ```python
 >>> import random
@@ -461,7 +284,7 @@ values: the index of the item in the list, and the item in the list itself.
 ['Alice', 'David', 'Bob', 'Carol']
 ```
 
-- Finding a Value in a List with the `index()` Method:
+#### 1.5.7. Finding a Value in a List with the `index()` Method:
 
 ```
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
@@ -478,7 +301,7 @@ ValueError: 'howdy howdy howdy' is not in list
 **Important**: When there are duplicates of the value in the list, the index of its first
 appearance is returned.
 
-- Adding Values to Lists with the `append()` and `insert()` Methods:
+#### 1.5.8. Adding Values to Lists with the `append()` and `insert()` Methods:
 
 ```
 >>> spam = ['cat', 'dog', 'bat']
@@ -494,7 +317,7 @@ appearance is returned.
 ['cat', 'chicken', 'dog', 'bat']
 ```
 
-- Removing Values from Lists with the `remove()` Method:
+#### 1.5.9. Removing Values from Lists with the `remove()` Method:
 
 ```
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -562,7 +385,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 ```
 
 
-- Reversing the Values in a List with the `reverse()` Method:
+#### 1.5.10. Reversing the Values in a List with the `reverse()` Method:
 
 ```
 >>> spam = ['cat', 'dog', 'moose']
@@ -618,7 +441,7 @@ False
 ```
 
 
-##  Dictionary Data Type
+###  1.6. `Dictionary`
 
 ```python
 import pprint
@@ -638,7 +461,7 @@ def totalBrought(guests, item):
     for k, v in guests.items():
         # pprint.pprint(k)
         # pprint.pprint(v)
-        numBrought = numBrought + v.get(item, 0)
+        numBrought += v.get(item, 0)
     return numBrought
 
 
@@ -653,7 +476,7 @@ print(' - Apple Pies ' + str(totalBrought(allGuests, 'apple pies')))
 
 ```
 
-#### Resultado:
+- Result:
 
 ```
 Number of things being brought:
@@ -664,7 +487,7 @@ Number of things being brought:
 - Apple Pies 1
 ```
 
-## The Tuple Data Type
+### 1.7. `Tuple `
 
 The tuple data type is almost identical to the list data type, except in two ways.
 First, tuples are typed with parentheses, ( and ), instead of square brackets,
@@ -693,7 +516,7 @@ eggs[1] = 99
 TypeError: 'tuple' object does not support item assignment
 ```
 
-### Converting Types with the list() and tuple() Functions:
+### 1.8. Converting Types with the list() and tuple() Functions:
 
 Just like how `str(42)` will return '42', the string representation of the integer
 `42`, the functions `list()` and `tuple()` will return list and tuple versions of the
@@ -714,16 +537,202 @@ values passed to them:
 Converting a tuple to a list is handy if you need a mutable version of a
 tuple value.
 
-## Working with PDF and Word Documents
+## 2. Working with PDF and Word Documents
 
-## Working with CSV Files and JSON Data
+## 3. Working with CSV Files and JSON Data
 
-## Pattern Matching with Regular Expressions
+## 4. Pattern Matching with Regular Expressions
 
-## Reading and Writing Files
+## 5. Reading and Writing Files
 
-## Organizing Files
+## 6. Organizing Files
 
-## Web Scraping
+## 7. Web Scraping
 
-## Working with Excel Spreadsheets
+## 8. Working with Excel Spreadsheets
+
+## 9. Generalities
+
+### 9.1. Strings:
+
+```python
+    myName = input()
+    nameLength = len(myName) # length of a string
+    print("Seu nome é " + myName + " que tem " + str(nameLength) + " caracteres."
+
+    # str(54), int('54'), float('54.0')
+```
+
+### 9.2. Operators:
+
+|  Op   |     Description     |
+| :---: | :------------------ |
+|  ==   | equal to            |
+|  !=   | not equal to        |
+|   <   | lower than          |
+|   >   | greater than        |
+|  <=   | lower or equal to   |
+|  >=   | greater or equal to |
+| True  | true                |
+| False | false               |
+|  not  | not                 |
+|  and  | and                 |
+|  or   | or                  |
+
+### 9.3. Flow control statements
+
+#### 9.3.1. `if` statement:
+
+```python
+# If statement
+if name == 'Alice':
+    print('Hi, Alice.')
+
+
+# If Else statement:
+if name == 'Alice':
+    print('Hi, Alice.')
+else:
+    print('Hello, stranger.')
+
+
+# Elif statement:
+if name == 'Alice':
+    print('Hi, Alice.')
+elif age < 12:
+    print('You are not Alice, kiddo.')
+elif age > 100:
+    print('You are not Alice, grannie.')
+elif age > 2000:
+    print('Unlike you, Alice is not an undead, immortal vampire.')
+else:
+    print('You are neither Alice nor a little kid.')
+```
+
+#### 9.3.2. `while` statement:
+
+```python
+# While loop statement
+while True:
+    print("Please, type you name.")
+    name = input()
+    if name != "Billy":
+        continue
+    print(Welcome back, Billy. Type your password")
+    password = input()
+    if password == "swordfish":
+        break
+print("Access granted.")
+
+```
+
+```python
+name = ''
+while not name:
+    print('Enter your name:')
+    name = input()
+print('How many guests will you have?')
+numOfGuests = int(input())
+if numOfGuests:
+    print('Be sure to have enough room for all your guests.')
+print('Done')
+```
+
+#### 9.3.3. `for` statement:
+
+**Observation**: `break` and `continue` allowed.
+
+```python
+
+print('My name is')
+for i in range(5):
+    print('Jimmy Five Times (' + str(i) + ')')
+
+for i in range(0, 10, 2):  # 0 - start; 10 - end; 2 - step
+    print(i)
+
+for i in range(5, -1, -1):
+    print(i)
+```
+
+### 9.4. Importing Modules:
+
+```python
+import random, sys, os, math
+
+for i in range(5):
+    print(random.randint(1, 10))
+```
+
+### 9.5. Ending a Program Early with the `sys.exit()` Function:
+
+```python
+import sys
+
+while True:
+    print('Type exit to exit.')
+    response = input()
+    if response == 'exit':
+        sys.exit()
+    print('You typed ' + response + '.')
+```
+
+### 9.6. A small program
+
+```python
+
+# This is a guess the number game.
+
+import random
+
+secretNumber = random.randint(1, 20)
+print('I am thinking of a number between 1 and 20.')
+
+# Ask the player to guess 6 times.
+for guessesTaken in range(1, 7):
+    print('Take a guess.')
+    guess = int(input())
+
+    if guess < secretNumber:
+        print('Your guess is too low.')
+    elif guess > secretNumber:
+        print('Your guess is too high.')
+    else:
+        break # This condition is the correct guess!
+
+if guess == secretNumber:
+    print('Good job! You guessed my number in ' + str(guessesTaken) + 'guesses!')
+else:
+    print('Nope. The number I was thinking of was ' + str(secretNumber))
+```
+
+### 9.7. Exception handling:
+
+```python
+import time, sys
+
+indent = 0 # How many spaces to indent.
+indentIncreasing = True # Whether the indentation is increasing or not.
+
+try:
+    while True: # The main program loop.
+        print(' ' * indent, end='')
+        print('********')
+        time.sleep(0.1) # Pause for 1/10 of a second.
+
+        if indentIncreasing:
+            # Increase the number of spaces:
+            indent = indent + 1
+            if indent == 10:
+                # Change direction:
+                indentIncreasing = False
+        else:
+            # Decrease the number of spaces:
+            indent = indent - 1
+            if indent == 0:
+                # Change direction:
+                indentIncreasing = True
+
+except KeyboardInterrupt:
+    sys.exit()
+```
