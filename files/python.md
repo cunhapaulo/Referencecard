@@ -9,18 +9,15 @@ Link to the Pyhton exaples:
   - [2.2. **Dicionários:** `{'nome': 'John', 'idade': 30, 'cidade': 'Example'}`](#22-dicionários-nome-john-idade-30-cidade-example)
   - [2.3. **Tuplas:** `(1, 'dois', 3.0)`](#23-tuplas-1-dois-30)
 - [3. Strings:](#3-strings)
-  - [Text justification with `rjust()`, `ljust()`, and `center()`](#text-justification-with-rjust-ljust-and-center)
-    - [Program:](#program)
+  - [3.1. Text justification with `rjust()`, `ljust()`, and `center()`](#31-text-justification-with-rjust-ljust-and-center)
+    - [3.1.1. Program:](#311-program)
 - [4. Operators:](#4-operators)
 - [5. Flow control statements](#5-flow-control-statements)
   - [5.1. `if` statement:](#51-if-statement)
   - [5.2. `while` statement:](#52-while-statement)
   - [5.3. `for` statement:](#53-for-statement)
-- [6. Important Informations](#6-important-informations)
-  - [6.1. Importing Modules:](#61-importing-modules)
-  - [6.2. Ending a Program Early with the `sys.exit()` Function:](#62-ending-a-program-early-with-the-sysexit-function)
-  - [6.3. A small program](#63-a-small-program)
-- [7. Exception handling:](#7-exception-handling)
+- [6. Exception handling:](#6-exception-handling)
+- [7. List Comprehension:](#7-list-comprehension)
 
 
 # 2. Data Types
@@ -80,6 +77,7 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
 
 Estas são apenas algumas das funções e métodos disponíveis para listas em Python. A linguagem é rica em recursos, permitindo uma manipulação versátil de estruturas de dados. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, fique à vontade para perguntar!
 
+
 ## 2.2. **Dicionários:** `{'nome': 'John', 'idade': 30, 'cidade': 'Example'}`
    Dicionários em Python são representados por chaves (`{}`). Eles são estruturas de dados que armazenam pares chave-valor, permitindo que você associe um valor a uma chave específica. Dicionários são úteis para mapear informações de forma eficiente.
 
@@ -115,6 +113,129 @@ Algumas das principais funções e métodos disponíveis em Python para trabalha
    - `nova_view_itens = dicionario.items()`: Retorna uma visão dos pares chave-valor no dicionário.
 
 Estas são apenas algumas das funções e métodos disponíveis para dicionários em Python. A linguagem oferece uma ampla gama de funcionalidades para manipulação eficiente de dicionários. Se precisar de mais detalhes sobre algum método específico ou tiver outras dúvidas, sinta-se à vontade para perguntar!
+
+
+```Python
+import os
+from pprint import pprint
+
+def main():
+    
+    os.system("cls")
+    
+    my_dict = {"Paulo" : {'a','b','c'}, "Mara" : {'d','e','f'}, "Família" : {'Paulo','Mara','Gabriel', 'Felipe'}}
+     
+    print("my_dict")
+    print(my_dict)
+    print("\n")
+    # RESULT:
+    #
+    # my_dict
+    # {'Paulo': {'b', 'a', 'c'}, 'Mara': {'d', 'f', 'e'}, 'Família': {'Felipe', 'Gabriel', 'Paulo', 'Mara'}}
+    
+    print("Add member to Dictionary")
+    my_dict["Felipe"] = {'x', 'y', 'z'}
+    print("my_dict['Felipe'] = {'x', 'y', 'z'}")
+    print(my_dict)
+    print("\n")
+    # RESULT
+    #
+    #Add member to Dictionary
+    # my_dict['Felipe'] = {'x', 'y', 'z'}
+    # {'Paulo': {'b', 'c', 'a'}, 'Mara': {'d', 'e', 'f'}, 'Família': {'Mara', 'Paulo', 'Gabriel', 'Felipe'}, 'Felipe': {'y', 'z', 'x'}}
+    
+        
+    keys = my_dict.keys()
+    print("my_dict.keys()")
+    print(keys)
+    print("\n")
+    # RESULT:
+    #
+    # my_dict.keys()
+    # dict_keys(['Paulo', 'Mara', 'Família'])
+    
+    values = my_dict.values()
+    print("my_dict.values()")
+    print(values)
+    print("\n")
+    # RESULT:
+    #
+    # my_dict.values()
+    # dict_values([{'b', 'a', 'c'}, {'d', 'f', 'e'}, {'Felipe', 'Gabriel', 'Paulo', 'Mara'}])
+    
+    items = my_dict.items()
+    print("my_dict.items()")
+    print(items)
+    print("\n")
+    # RESULT:
+    #
+    # my_dict.items()
+    # dict_items([('Paulo', {'b', 'a', 'c'}), ('Mara', {'d', 'f', 'e'}), ('Família', {'Felipe', 'Gabriel', 'Paulo', 'Mara'})])
+    
+    print("Individual items (tuples):")
+    for v in items:
+        print(v)
+    print("\n")
+    # RESULT:
+    #
+    # Individual items (tuples):
+    # ('Paulo', {'b', 'c', 'a'})
+    # ('Mara', {'d', 'e', 'f'})
+    # ('Família', {'Felipe', 'Gabriel', 'Paulo', 'Mara'})
+    
+    print("Individual elements in the items (tuples):")
+    for v in items:
+        name, letter = v
+        print(name)
+        print(letter)
+    print("\n")
+    # RESULT:
+    #
+    # Individual elements in the items (tuples):
+    # Paulo
+    # {'b', 'c', 'a'}
+    # Mara
+    # {'d', 'e', 'f'}
+    # Família
+    # {'Felipe', 'Gabriel', 'Paulo', 'Mara'}
+
+    print("Individual elements in the list of items:")
+    for n in items:
+        name, letter = n # tuple dissociation
+        print(name)
+        for l in letter:
+            print(l)
+        print("")
+    # RESULT:
+    #
+    # Individual elements in the list of items:
+    # Paulo
+    # b
+    # c
+    # a
+    #
+    # Mara
+    # d
+    # e
+    # f        
+    #
+    # Família
+    # Felipe
+    # Gabriel
+    # Paulo
+    # Mara
+    
+    print("len(my_dict)")
+    size = len(my_dict)
+    print(size)
+    print("")  
+        
+
+if __name__ == "__main__":
+    # calls the main function
+    main()
+
+```
 
 ##  2.3. **Tuplas:** `(1, 'dois', 3.0)`
    As tuplas são representadas por parênteses (`()`). Ao contrário das listas, **as tuplas são imutáveis**, ou seja, após criadas, seus elementos não podem ser alterados. Elas são geralmente utilizadas para armazenar coleções de dados relacionados.
@@ -188,7 +309,7 @@ print("Meu nome é {0}, nasci no ano de {1}. Portanto,
 Meu nome é Paulo, nasci no ano de 1969. Portanto, tenho 54 anos de idade.
 ```
 
-## Text justification with `rjust()`, `ljust()`, and `center()`
+## 3.1. Text justification with `rjust()`, `ljust()`, and `center()`
 
 ```python
 >>> "[Página Inicial]".center(80)
@@ -204,7 +325,7 @@ Meu nome é Paulo, nasci no ano de 1969. Portanto, tenho 54 anos de idade.
 '================================================================[Página Inicial]'
 ```
 
-### Program:
+### 3.1.1. Program:
 
 ```Python
 def printPicnic(itemsDict, leftWidth, rightWidth):
@@ -314,60 +435,8 @@ for i in range(5, -1, -1):
     print(i)
 ```
 
-# 6. Important Informations
 
-## 6.1. Importing Modules:
-
-```python
-import random, sys, os, math
-
-for i in range(5):
-    print(random.randint(1, 10))
-```
-
-## 6.2. Ending a Program Early with the `sys.exit()` Function:
-
-```python
-import sys
-
-while True:
-    print('Type exit to exit.')
-    response = input()
-    if response == 'exit':
-        sys.exit()
-    print('You typed ' + response + '.')
-```
-
-## 6.3. A small program
-
-```python
-
-# This is a guess the number game.
-
-import random
-
-secretNumber = random.randint(1, 20)
-print('I am thinking of a number between 1 and 20.')
-
-# Ask the player to guess 6 times.
-for guessesTaken in range(1, 7):
-    print('Take a guess.')
-    guess = int(input())
-
-    if guess < secretNumber:
-        print('Your guess is too low.')
-    elif guess > secretNumber:
-        print('Your guess is too high.')
-    else:
-        break # This condition is the correct guess!
-
-if guess == secretNumber:
-    print('Good job! You guessed my number in ' + str(guessesTaken) + 'guesses!')
-else:
-    print('Nope. The number I was thinking of was ' + str(secretNumber))
-```
-
-# 7. Exception handling:
+# 6. Exception handling:
 
 ```python
 import time, sys
@@ -396,4 +465,30 @@ try:
 
 except KeyboardInterrupt:
     sys.exit()
+```
+
+# 7. List Comprehension:
+
+**Syntax**:
+```Python
+    lst_instance = list(range(1,10))
+    lst_tuple_squares = [ (x, x**2) for x in lst_instance]
+    lst_even_squares  = [ x**2      for x in lst_instance if x%2 == 0]
+    lst_squares       = [ ]
+ 
+    # Execution:
+    # >>> lst_squares
+    # [(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+    # >>> lst_even_squares
+    # [4, 16]
+
+```
+
+**Example**:
+
+```Python
+>>> list_instance = [('nome', 1), ('idade', 2), ('endereço', 3)]
+>>> l = [(y,x) for (x,y) in list_instance]
+>>> l
+[(1, 'nome'), (2, 'idade'), (3, 'endereço')]
 ```

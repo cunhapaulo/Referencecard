@@ -17,7 +17,7 @@ Python language reference
     - [2.1.9. Removing Values from Lists with the `remove()` Method:](#219-removing-values-from-lists-with-the-remove-method)
     - [2.1.10. Sorting the Values in a List with the `sort()` Method:](#2110-sorting-the-values-in-a-list-with-the-sort-method)
     - [2.1.11. Reversing the Values in a List with the `reverse()` Method:](#2111-reversing-the-values-in-a-list-with-the-reverse-method)
-      - [Program:](#program)
+      - [2.1.11.1. Program:](#21111-program)
   - [2.2. `Dictionary`](#22-dictionary)
   - [2.3. `Tuple `](#23-tuple-)
   - [2.4. Converting Types with the list() and tuple() Functions:](#24-converting-types-with-the-list-and-tuple-functions)
@@ -29,7 +29,10 @@ Python language reference
   - [3.5. Organizing Files](#35-organizing-files)
   - [3.6. Web Scraping](#36-web-scraping)
   - [3.7. Working with Excel Spreadsheets](#37-working-with-excel-spreadsheets)
-  - [3.8. Generalities](#38-generalities)
+- [4. Generalities](#4-generalities)
+  - [4.1. Importing Modules:](#41-importing-modules)
+  - [4.2. Ending a Program Early with the `sys.exit()` Function:](#42-ending-a-program-early-with-the-sysexit-function)
+  - [4.3. Handle Command Line Arguments](#43-handle-command-line-arguments)
 
 # 2. Data Structures
 
@@ -248,7 +251,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 ['moose', 'dog', 'cat']
 ```
 
-#### Program:
+#### 2.1.11.1. Program:
 
 ```python
 import random
@@ -402,5 +405,40 @@ tuple value.
 ## 3.5. Organizing Files
 ## 3.6. Web Scraping
 ## 3.7. Working with Excel Spreadsheets
-## 3.8. Generalities
 
+# 4. Generalities
+
+## 4.1. Importing Modules:
+
+```python
+import random, sys, os, math
+
+for i in range(5):
+    print(random.randint(1, 10))
+```
+
+## 4.2. Ending a Program Early with the `sys.exit()` Function:
+
+```python
+import sys
+
+while True:
+    print('Type exit to exit.')
+    response = input()
+    if response == 'exit':
+        sys.exit()
+    print('You typed ' + response + '.')
+```
+
+
+## 4.3. Handle Command Line Arguments
+
+```Python
+import sys
+
+if len(sys.argv) < 2:
+    print('Usage: python mclip.py [keyphrase] - copy phrase text')
+    sys.exit()
+
+keyphrase = sys.argv[1] # first command line arg is the keyphrase
+```
