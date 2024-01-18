@@ -18,6 +18,9 @@ Link to the Pyhton exaples:
   - [5.3. `for` statement:](#53-for-statement)
 - [6. Exception handling:](#6-exception-handling)
 - [7. List Comprehension:](#7-list-comprehension)
+  - [7.1. Syntax:](#71-syntax)
+  - [7.2. Example:](#72-example)
+  - [7.3. Program:](#73-program)
 
 
 # 2. Data Types
@@ -469,7 +472,7 @@ except KeyboardInterrupt:
 
 # 7. List Comprehension:
 
-## Syntax:
+## 7.1. Syntax:
 ```Python
     lst_instance = list(range(1,10))
     lst_tuple_squares = [ (x, x**2) for x in lst_instance]
@@ -484,7 +487,7 @@ except KeyboardInterrupt:
 
 ```
 
-## Example:
+## 7.2. Example:
 
 ```Python
 >>> list_instance = [('nome', 1), ('idade', 2), ('endereço', 3)]
@@ -493,7 +496,7 @@ except KeyboardInterrupt:
 [(1, 'nome'), (2, 'idade'), (3, 'endereço')]
 ```
 
-## Program:
+## 7.3. Program:
 
 ```Python
     file_info = [
