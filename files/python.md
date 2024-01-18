@@ -469,7 +469,7 @@ except KeyboardInterrupt:
 
 # 7. List Comprehension:
 
-**Syntax**:
+## Syntax:
 ```Python
     lst_instance = list(range(1,10))
     lst_tuple_squares = [ (x, x**2) for x in lst_instance]
@@ -484,11 +484,27 @@ except KeyboardInterrupt:
 
 ```
 
-**Example**:
+## Example:
 
 ```Python
 >>> list_instance = [('nome', 1), ('idade', 2), ('endereço', 3)]
 >>> l = [(y,x) for (x,y) in list_instance]
 >>> l
 [(1, 'nome'), (2, 'idade'), (3, 'endereço')]
+```
+
+## Program:
+
+```Python
+    file_info = [
+        ("Usuário do programa", os.getlogin()),
+        # ("Nome do arquivo",     reader.getDocumentInfo),
+        ("Nome do arquivo",     os.path.basename(file_path)),
+        ("Número de páginas",   document_page_number),
+        ("PDF Creator",         metadata_info.creator),
+        ("PDF Producer",        metadata_info.producer),
+    ]
+
+    # List comprehension
+    [print((str(x)+':').ljust(25,'.') + str(y)) for (x, y) in file_info]
 ```
