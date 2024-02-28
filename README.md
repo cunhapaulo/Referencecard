@@ -24,6 +24,7 @@ Suggestions are mostly welcome!
 | [CSS](https://github.com/cunhapaulo/ReferenceCard/blob/main/slides.css)                   | One CSS file to be learned of        |
 | [LaTeX](./files/latex.md)                                                                 | Code to be reused in LaTeX           |
 | [Markdown](https://github.com/cunhapaulo/ReferenceCard/wiki/Markdown-to-LaTeX-via-Pandoc) | Markdown code to be used with Pandoc |
+| [Regular Expressions](https://github.com/cunhapaulo/ReferenceCard/wiki/Regular-Expressions-(REGEXP))            | Regular Expressions |
 
 
 
