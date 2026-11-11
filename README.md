@@ -1,20 +1,38 @@
-## Configs
-[VSCode](https://github.com/cunhapaulo/Referencecard/wiki/VS-Code-%E2%80%90-Config)
+## Dissertações e Teses
+- [Trabalhos Acadêmicos](https://github.com/cunhapaulo/Referencecard/wiki/Estrutura-Geral-de-Disserta%C3%A7%C3%B5es-e-Teses-Acad%C3%AAmicas)
+- [Citação Indireta](https://github.com/cunhapaulo/Referencecard/wiki/Citacao-Indireta)
+- [Estrutura Planejada](https://github.com/cunhapaulo/Referencecard/wiki/Proposta-de-Estrutura-para-a-Disserta%C3%A7%C3%A3o)
+- [Proposta de Introdução](https://github.com/cunhapaulo/Referencecard/wiki/Proposta-de-Introdu%C3%A7%C3%A3o-%C3%A0-Disserta%C3%A7%C3%A3o)
+
+## Typography, Colors \&  CSS
+- BEST APP: [colorize.design](https://colorize.design/) - Generate color palettes from any website.
+- BEST DESIGNERS: [Dribbble.com](https://dribbble.com/) - Work from the most talented and designers.
+- [Fonts and Colors](https://github.com/cunhapaulo/ReferenceCard/wiki/Fonts-and-Colors)
+- [CSS tips](https://github.com/cunhapaulo/ReferenceCard/wiki/CSS)
+- [ASCII Comments](https://github.com/cunhapaulo/Referencecard/wiki/Text-to-ASCII-Art-Generator)
 
 ## Typesetting
 - [MARP (Markdown slides)](https://github.com/cunhapaulo/ReferenceCard/wiki/Marp)
 - [QUARTO (Markdown slides)](https://github.com/cunhapaulo/ReferenceCard/wiki/Quarto)
 - [TYPST (typesetting)](https://github.com/cunhapaulo/ReferenceCard/wiki/Typst)
+
+## LaTeX e TeX
 - [LATEX+ etc.](https://github.com/cunhapaulo/ReferenceCard/wiki/LaTeX)
+  - [LATEX in CSS](https://github.com/cunhapaulo/Referencecard/wiki/LATEX-in-CSS)
   - [Beamer](https://github.com/cunhapaulo/ReferenceCard/wiki/LaTeX-Beamer-(slides))
   - [BibLaTeX](https://github.com/cunhapaulo/ReferenceCard/wiki/LaTeX-%E2%80%90-BibLaTeX)
   - [Markdown to LaTeX via Pandoc](https://github.com/cunhapaulo/ReferenceCard/wiki/Markdown-to-LaTeX-via-Pandoc)
+### Tools
+- [BIBTEX-TIDY (BibTex formatter)](https://github.com/cunhapaulo/Referencecard/wiki/BibTex%E2%80%90Tidy)
+- [TEX-FMT (LaTeX code formatter)](https://github.com/cunhapaulo/Referencecard/wiki/TeX%E2%80%90FMT)
+- [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#placeholders)
+
+## Pandoc
 - [PANDOC](https://github.com/cunhapaulo/ReferenceCard/wiki/Pandoc)
+- [Markdown to LaTeX via Pandoc](https://github.com/cunhapaulo/ReferenceCard/wiki/Markdown-to-LaTeX-via-Pandoc)
 
-### Typography and Colors
-- [Fonts and Colors](https://github.com/cunhapaulo/ReferenceCard/wiki/Fonts-and-Colors)
 
-### Greek Alphabet
+## Greek Alphabet
 - [Greek Alphabet](https://github.com/cunhapaulo/ReferenceCard/wiki/Greek)
 
 ## Programming
@@ -28,6 +46,25 @@
   - [Python ‐ Functional Programming 2](https://github.com/cunhapaulo/ReferenceCard/wiki/Python-%E2%80%90-Functional-Programming-2)
   - [Python ‐ List Comprehension](https://github.com/cunhapaulo/ReferenceCard/wiki/Python-%E2%80%90-List-Comprehension)
 
-## CSS  (Cascading Style Sheet)
-- [CSS tips](https://github.com/cunhapaulo/ReferenceCard/wiki/CSS)
-- [CSS](https://github.com/cunhapaulo/ReferenceCard/blob/main/slides.css)
+## Software & Configs
+
+## VSCode
+- [My Config](https://github.com/cunhapaulo/Referencecard/wiki/VS-Code-%E2%80%90-Config)
+- [Config Tips](https://www.youtube.com/playlist?list=PLXDouhCU5r6q10ef9yXxzY4GwVpAQMvsZ)
+- [Color Styles](https://github.com/cunhapaulo/Referencecard/wiki/VS-Code-Color-Styles)
+
+
+## Tools
+
+### Table Generator
+- [Table Generator](https://www.tablesgenerator.com/html_tables)
+
+### Python:
+
+#### Black (formatter)
+> - pip install black
+> - black meu_arquivo.py
+
+#### Ruff (formatter)
+> - pip install ruff
+> - ruff format meu_arquivo.py
