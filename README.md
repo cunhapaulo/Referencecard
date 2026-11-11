@@ -1,4 +1,4 @@
-## Dissertações e Teses  
+## Dissertações e Teses
 - [Trabalhos Acadêmicos](https://github.com/cunhapaulo/Referencecard/wiki/Estrutura-Geral-de-Disserta%C3%A7%C3%B5es-e-Teses-Acad%C3%AAmicas)
 - [Citação Indireta](https://github.com/cunhapaulo/Referencecard/wiki/Citacao-Indireta)
 - [Estrutura Planejada](https://github.com/cunhapaulo/Referencecard/wiki/Proposta-de-Estrutura-para-a-Disserta%C3%A7%C3%A3o)
