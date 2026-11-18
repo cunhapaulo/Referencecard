@@ -11,7 +11,15 @@
 - [CSS tips](https://github.com/cunhapaulo/ReferenceCard/wiki/CSS)
 - [ASCII Comments](https://github.com/cunhapaulo/Referencecard/wiki/Text-to-ASCII-Art-Generator)
 
+## Editor Pandoc \> Markdown \> \LaTeX \> PDF (VSCode)
+
+Como construir um editor no VSCode usando Markdown, Pandoc e LaTeX
+
+- [CSS para visualizar Markdown no VSCode](https://github.com/cunhapaulo/Referencecard/wiki/CSS-Editor)
+- [VSCode config](https://github.com/cunhapaulo/Referencecard/wiki/Editor-Pandoc---LaTeX)
+
 ## Typesetting
+- [MARKDOWN](https://github.com/cunhapaulo/Referencecard/wiki/Markdown)
 - [MARP (Markdown slides)](https://github.com/cunhapaulo/ReferenceCard/wiki/Marp)
 - [QUARTO (Markdown slides)](https://github.com/cunhapaulo/ReferenceCard/wiki/Quarto)
 - [TYPST (typesetting)](https://github.com/cunhapaulo/ReferenceCard/wiki/Typst)
